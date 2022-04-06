@@ -4,7 +4,7 @@ address: "dwhui: iowdiw"
 active: true
 key:
     key: value
-    key2: 33
+    key2: 333
     key3:
         key: value
         key2: value
@@ -20,16 +20,16 @@ objectsArray:
     - key: value
       key2: value 2
 longText: > # If I use this, it means that the text will be represented in one line (JSON)
-    owiasskaldj lsakjdklsajdljl alskdjlksajdlsa 
-    kljsalkdjlsajd slkdjsakldjlsaj 
+    owiasskaldj lsakjdklsajdljl alskdjlksajdlsa
+    kljsalkdjlsajd slkdjsakldjlsaj
     ajkakjalajlkaj
 longTextNewLines: | # If I use this, it means that the text will be represented in three lines (JSON)
-    owiasskaldj lsakjdklsajdljl alskdjlksajdlsa 
-    kljsalkdjlsajd slkdjsakldjlsaj 
+    owiasskaldj lsakjdklsajdljl alskdjlksajdlsa
+    kljsalkdjlsajd slkdjsakldjlsaj
     ajkakjalajlkaj
 
 
-    
+
 
 
 
