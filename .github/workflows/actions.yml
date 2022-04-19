@@ -1,7 +1,7 @@
 name: Actions Workflow
 
-on: # [push, pull_request]
-  push:
+on: [pull_request] # [push, pull_request]
+  # push:
     # branches:
     #   - master
     #   - 'feature/*' # matches features/featA, feature/featB, doesn't match feature/feat/a
@@ -12,8 +12,8 @@ on: # [push, pull_request]
     # paths:
     #   - '**.js'
     #   - '!filename.js'
-    paths-ignore:
-      - 'docs/**'
+    # paths-ignore:
+    #   - 'docs/**'
   # repository_dispatch:
   #   types: [build]
   # schedule:
