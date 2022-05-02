@@ -5,10 +5,10 @@ on: [push]
 jobs:
   run-shell-commands:
     runs-on: ubuntu-latest
+    timeout-minutes: 0
     steps:
       - name: use context
         run: eccho "${{ github.action }}"
-        timeout-minutes: 1
         # continue-on-error: true
       - name: echo a string
         run: echo "Hello World"
