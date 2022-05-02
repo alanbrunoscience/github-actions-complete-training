@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: use context
-        run: echo "${{ github.action }}"
+        run: eccho "${{ github.action }}"
+        # timeout-minutes: 0
+        continue-on-error: true
       - name: echo a string
         run: echo "Hello World"
       - name: multiline script
