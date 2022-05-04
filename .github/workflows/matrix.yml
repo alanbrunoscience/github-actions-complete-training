@@ -7,15 +7,14 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        node_version: [6,10]
+        node_version: [6,8,10]
         include:
           - os: ubuntu-latest
-            node_version: 4
-            # is_ubuntu_8: "true"
+            node_version: 8
+            is_ubuntu_8: "true"
         exclude:
           - os: ubuntu-latest
             node_version: 6
-            is_ubuntu_8: "true"
           - os: macos-latest
             node_version: 8
       # fail-fast: true
