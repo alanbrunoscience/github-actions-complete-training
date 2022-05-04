@@ -7,11 +7,11 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        node_version: [6,8,10]
+        node_version: [6,10]
         include:
           - os: ubuntu-latest
-            node_version: 4
-            # is_ubuntu_8: "true"
+            node_version: 8
+            is_ubuntu_8: "true"
         exclude:
           - os: ubuntu-latest
             node_version: 6
@@ -20,8 +20,8 @@ jobs:
       # fail-fast: true
       # max-parallel: 3
     runs-on: ${{ matrix.os }}
-    # env:
-    #   IS_UBUNTU_8: ${{ matrix.is_ubuntu_8 }}
+    env:
+      IS_UBUNTU_8: ${{ matrix.is_ubuntu_8 }}
     steps:
       - name: Log node version
         run: node -v
@@ -31,4 +31,4 @@ jobs:
       - name: Log node version
         run: |
           node -v
-        # echo $IS_UBUNTU_8
+          echo $IS_UBUNTU_8
